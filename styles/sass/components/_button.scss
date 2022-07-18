@@ -1,0 +1,9 @@
+@use "../utilities/variables" as *;
+@use "../main.scss";
+
+button{
+    background-color: map-get($map: $primary, $key: "DarkCyan");
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Montserrat";
+}
