@@ -1,26 +1,84 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
 button {
   background-color: hsl(158deg, 36%, 37%);
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 700;
+  color: white;
+  padding: 13px 0 13px 0;
   font-family: "Montserrat";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border-style: solid;
+}
+button p {
+  margin-left: 10px;
+}
+button:active {
+  background-color: #1a4031;
 }
 
 .card {
-  max-width: 375px;
-  height: 667px;
+  max-width: 350px;
   align-self: center;
   justify-self: center;
+  display: grid;
 }
 .card figure {
+  border-radius: 10px 10px 0px 0px;
   width: 100%;
+  height: fit-content;
 }
 .card figure img {
   width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  align-self: center;
+}
+.card .text-area {
+  display: grid;
+  margin: 10px 25px 10px 25px;
+}
+.card h2 {
+  font-size: 32px;
+  font-family: "Fraunces";
+  color: hsl(212deg, 21%, 14%);
+}
+.card h4, .card .text-area > p {
+  color: hsl(228deg, 12%, 48%);
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 200%;
+}
+.card .text-area > p {
+  margin-bottom: 30px;
+}
+.card > *, .card .text-area > * {
+  margin-bottom: 10px;
+}
+.card .prices {
+  display: flex;
+  align-items: center;
+}
+.card .prices .false-price {
+  color: hsl(228deg, 12%, 48%);
+  text-decoration: line-through;
+  font-family: "Montserrat";
+  font-size: 13px;
+}
+.card .prices .true-price {
+  font-family: "Fraunces";
+  color: hsl(158deg, 36%, 37%);
+  font-size: 36px;
+  margin-right: 30px;
 }
 
 body {
   display: grid;
+  align-items: center;
+  padding: 5rem;
 }
 
 * {
