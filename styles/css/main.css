@@ -5,3 +5,25 @@ button {
   font-weight: 500;
   font-family: "Montserrat";
 }
+
+.card {
+  max-width: 375px;
+  height: 667px;
+  align-self: center;
+  justify-self: center;
+}
+.card figure {
+  width: 100%;
+}
+.card figure img {
+  width: 100%;
+}
+
+body {
+  display: grid;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}

@@ -2,3 +2,10 @@
 @use "components/button";
 
 @use "layout/card";
+
+@use "layout/body";
+
+*{
+    padding: 0;
+    margin: 0;
+}
