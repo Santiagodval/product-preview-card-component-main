@@ -98,7 +98,13 @@ button:active {
 body {
   display: grid;
   align-items: center;
+  grid-template-columns: 150px;
   padding: 5rem;
+}
+@media (min-width: 450px) {
+  body {
+    grid-template-columns: 1fr;
+  }
 }
 
 * {
