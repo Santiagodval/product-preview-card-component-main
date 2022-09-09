@@ -24,6 +24,7 @@ button:active {
   max-width: 350px;
   align-self: center;
   justify-self: center;
+  background-color: white;
   display: grid;
 }
 .card figure {
@@ -97,9 +98,10 @@ button:active {
 
 body {
   display: grid;
-  align-items: center;
   grid-template-columns: 150px;
-  padding: 5rem;
+  background-color: hsl(30deg, 38%, 92%);
+  min-height: 100vh;
+  place-content: center;
 }
 @media (min-width: 450px) {
   body {

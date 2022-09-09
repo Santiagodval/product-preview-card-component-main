@@ -1,8 +1,12 @@
 body{
     display: grid;
-    align-items: center;
     grid-template-columns: 150px;
-    padding: 5rem;
+
+    background-color: hsl(30, 38%, 92%); ;
+    
+
+    min-height: 100vh;
+    place-content: center;
 
     @media (min-width: 450px){
         grid-template-columns: 1fr;
